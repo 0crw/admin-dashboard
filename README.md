@@ -1,2 +1,5 @@
-# admin-dashboard
-Admin Dashboard project by The Odin Project
+# Admin Dashboard
+
+Project: Admin Dashboard by The Odin Project
+
+Live-preview => .. .. ..
