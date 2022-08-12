@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+
+
+    outline: 0px red solid;
+}
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(5, 1fr);
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Left Side || Sidebar */
+.side-bar {
+    grid-row: 1 / 6;
+    padding: 15px 30px 15px 20px;
+   
+
+    background-color: #409cff;
+}
+
+.title-side {
+    display: flex;
+    justify-content: start;
+}
+
+
+
+/* Header */
+
+.header {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+
+    background-color: #ededed;
+}
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+
+
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.search-bar input {
+    width: 30vw;
+    height: 2vh;
+
+    border: 2px solid greenyellow;
+    border-radius: 16px;
+    background-color: greenyellow;
+
+    padding: 10px;
+}
+
+
+.lit-profile {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+
+.bot-line {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.big-profile {
+    display: flex;
+    align-items: center;
+}
+
+
+.head-btn {
+    display: flex;
+
+    gap: 60px;
+}
+
+.head-btn button {
+    width: 100px;
+    height: 35px;
+    border: 2px solid #409cff;
+    border-radius: 16px;
+
+    color: #ededed;
+    background-color: #409cff;
+
+}
+
+
+
+
+
+
+
+/* Cards Area */
+
+.content {
+    grid-column: 2 / 5;
+    grid-row: 2 / 6;
+
+    padding: 20px;
+
+    background-color: grey;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+
+    margin-top: 20px;
+    
+}
+
+.card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    border-radius: 10px;
+    border-left: black 10px solid;
+
+    max-width: 500px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+
+.card , .card-title , .card-content , .icons{
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.card-title {
+    padding-top: 10px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: flex-end;
+    gap: 20px;  
+}
+
+
+
+
+.aside {
+    grid-column: 5 / 6;
+    grid-row: 2 / 6;
+
+    padding: 20px;
+
+    background-color: darkgray;
+}
+
+
+
+
+/* Img and Icon adj                         */
+
+#little-pic {
+    width: 60px;
+    height: auto;
+}
+
+#big-pic {
+    width: 100px;
+    height: auto;
+}
+
+.trend-pic {
+    width: 45px;
+    height: auto;
+}
+
